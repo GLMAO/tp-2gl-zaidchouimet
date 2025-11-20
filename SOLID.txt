@@ -1,0 +1,39 @@
+Oui, mon code respecte bien les principes SOLID :
+
+S — Single Responsibility Principle (SRP)
+Chaque classe a une seule responsabilité :
+
+Cours garde juste les infos d’un cours.
+
+Builder crée des objets Cours.
+
+GestionnaireEmploiDuTemps gère les notifications et la liste des cours.
+
+Decorator ajoute juste des infos en plus au cours.
+Pas de mélange de responsabilités.
+
+O — Open/Closed Principle (OCP)
+Les Decorator permettent d’ajouter des fonctionnalités sans toucher au code original.
+Le code est ouvert à l’extension et fermé à la modification.
+
+L — Liskov Substitution Principle (LSP)
+On peut remplacer un CoursComponent par un Decorator ou un autre Observer sans casser le code.
+Le comportement reste correct.
+
+I — Interface Segregation Principle (ISP)
+Les interfaces sont séparées :
+
+Observer
+
+Subject
+
+CoursComponent
+Pas d’interface trop lourde.
+
+D — Dependency Inversion Principle (DIP)
+GestionnaireEmploiDuTemps dépend des interfaces (Observer) et pas des classes concrètes.
+DIP respecté.
+
+Est-ce qu’il y a des violations ?
+Non, dans ma version il n’y a aucune violation des principes SOLID.
+Même si le prof voulait un code plus simple, le design reste correct et propre.
